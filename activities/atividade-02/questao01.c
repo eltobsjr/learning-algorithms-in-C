@@ -1,10 +1,10 @@
 #include <stdio.h>
 
 int main(void) {
-    float metros;
+    double metros;
 
     printf("Digite o valor em metros: ");
-    scanf("%f", &metros);
+    scanf("%lf", &metros);
 
     printf("Decimetros: %.2f\n", metros * 10);
     printf("Centimetros: %.2f\n", metros * 100);

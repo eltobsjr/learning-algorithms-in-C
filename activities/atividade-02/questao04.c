@@ -13,7 +13,7 @@ int main(void) {
     printf("Digite Fahrenheit (int): ");
     scanf("%d", &f2);
 
-    c2 = (f2 - 32) * (5 / 9);
+    c2 = (f2 - 32) * 5 / 9;
     printf("Celsius: %d\n", c2);
 
     return 0;
