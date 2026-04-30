@@ -1,16 +1,9 @@
 {
     "tasks": [
         {
-            "type": "cppbuild",
+            "type": "shell",
             "label": "C/C++: gcc build active file",
-            "command": "/usr/bin/gcc",
-            "args": [
-                "-fdiagnostics-color=always",
-                "-g",
-                "${file}",
-                "-o",
-                "${fileDirname}/${fileBasenameNoExtension}"
-            ],
+            "command": "mkdir -p \"${fileDirname}/bin\" && /usr/bin/gcc -fdiagnostics-color=always -g \"${file}\" -o \"${fileDirname}/bin/${fileBasenameNoExtension}\"",
             "options": {
                 "cwd": "${fileDirname}"
             },
